@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Login_with_email" preserve-order="true" verbose="1" >
+
+    <test name="Log in with email">
+        <classes>
+            <class name="tests.LogInTests">
+                <methods>
+                    <include name="loginUserWithEmail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

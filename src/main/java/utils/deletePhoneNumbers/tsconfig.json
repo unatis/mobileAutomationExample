@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "target": "es6",
+        "lib": ["esnext"],
+        "resolveJsonModule": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "allowJs": false,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "paths": {
+            "kang/*": ["src/*"],
+            "kui/*": ["src/components/kui/*"],
+            "e2e/*": ["e2e/"]
+        },
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "typeRoots": ["node_modules/@types", "./typings"],
+        "plugins": [
+            {
+                "name": "typescript-styled-plugin",
+                "lint": {
+                    "validProperties": [
+                        "shadow-color",
+                        "shadow-opacity",
+                        "shadow-offset",
+                        "shadow-radius",
+                        "padding-horizontal",
+                        "padding-vertical",
+                        "margin-vertical",
+                        "margin-horizontal",
+                        "tint-color",
+                        "aspect-ratio",
+                        "elevation"
+                    ]
+                }
+            }
+        ]
+    },
+    "exclude": ["**/*.js", "node_modules"]
+}

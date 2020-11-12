@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity 3">
+    <suite-files>
+        <suite-file path="PreShareTests.xml"></suite-file>
+    </suite-files>
+    <listeners>
+        <!--        <listener class-name="utils.AnnotationTransformer"/>-->
+        <listener class-name="utils.Listener"/>
+    </listeners>
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity 2">
+    <suite-files>
+        <suite-file path="LoginTests.xml"></suite-file>
+        <suite-file path="OnBoardingTests.xml"></suite-file>
+        <suite-file path="WelcomeScreenTests.xml"></suite-file>
+    </suite-files>
+    <listeners>
+<!--        <listener class-name="utils.AnnotationTransformer"/>-->
+        <listener class-name="utils.Listener"/>
+    </listeners>
+</suite>

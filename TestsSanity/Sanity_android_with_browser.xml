@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity_android_with_browser">
+
+    <suite-files>
+        <suite-file path="Login_with_email.xml"></suite-file>
+    </suite-files>
+
+    <listeners>
+        <listener class-name="utils.AnnotationTransformer"/>
+        <listener class-name="utils.Listener"/>
+    </listeners>
+</suite>
